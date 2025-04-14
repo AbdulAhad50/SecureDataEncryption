@@ -102,7 +102,7 @@ elif choice == 'Login':
     if st.button("Login"):
         if username in store_data and store_data[username]["password"] == hash_password(password):
             st.session_state.authenticated_user = username
-            st.session_satate.failed_attempts = 0
+            st.session_state.failed_attempts = 0
             st.success(f"Welcome {username}")
 
         else:
