@@ -12,6 +12,7 @@ SALT= b"secure_salt_value"
 LOCKOUT_DURATION = 60
 
 
+
 if "authenticated_user" not in st.session_state:
     st.session_state.authenticated_user = None
 
